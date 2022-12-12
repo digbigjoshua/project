@@ -1,0 +1,44 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.road{
+  height: 20%;
+  background: dimgrey;
+  box-sizing: border-box;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+  position: absolute;
+  width: 70%;
+  left: 15.25%;
+  transform: perspective(10px) rotateX(10deg) rotateZ(90deg);
+}
+.lines{
+  box-sizing: border-box;
+  border: 120px dashed #fff;
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  top: 15%;
+  transform: perspective(20px) rotateX(5deg) rotateZ(90deg) rotateY(-.75deg);
+}
+.car{
+  width: 10.5%;
+  height: -10.5%;
+position: absolute;
+top: 5.5px;
+left: 45%;
+animation-name: drive;
+animation-duration: 10s;
+
+
+
+
+}
+@keyframes drive{
+  from{transform:scale(0);}
+  to{transform: scale(25.5) translateY(400px);}
+}
+
+
+
